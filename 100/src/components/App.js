@@ -21,7 +21,7 @@ class App extends Component {
   render () {
     return (
       <div className="App">
-        <HeaderAdmin/> 
+        <HeaderAdmin/>
         <Route exact path='/' component={LoginForm} />
         <Route exact path='/Throttle' component={reactThrottle} />
         <Route path='/floatPopulationList' component={floatingPopulationList} />

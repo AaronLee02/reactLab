@@ -16,7 +16,7 @@ class floatingPopulationList extends Component {
     }
 
     callFloatPopulListApi = async () => {
-            axios.get('http://openapi.seoul.go.kr:8088/746b4762786170703430676e6e4678/json/IotVdata018/1/5/', {
+            axios.get('/api/user/', {
             })
             .then( response => {
                 //alert( JSON.stringify(response) );
@@ -38,8 +38,8 @@ class floatingPopulationList extends Component {
         //jsonString = jsonString.replace(/\(10세단위\)/g, '')
         var json = JSON.parse(jsonString)
 
-        for(let i=0; i<json.IotVdata018.row.length; i++){
-            var data = json.IotVdata018.row[i]
+        for(let i=0; i<json.length; i++){
+            var data = json[i]
             var idx = i+1
             result.push(
             <tr class="hidden_type">

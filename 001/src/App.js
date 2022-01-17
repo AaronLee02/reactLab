@@ -1,10 +1,14 @@
 import React from 'react';
+import logo from './logo.svg';
+import './App.css';
+import Header from './components/Header';
+import PriceChart from './components/PriceChart';
 
 function App() {
   return (
-    <div>
-      <h1>Start React 200!</h1>
-      <p>HTML 적용하기</p>
+    <div className="App">
+      <Header />
+      <PriceChart />
     </div>
   );
 }
